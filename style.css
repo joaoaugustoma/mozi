@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./assets/Home.svg');
+  background-size: cover;
+  height: 100vh;
+  color: #3F211C;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,  p{
+  font-family: 'Arvo', serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+
+p.text {
+  font-size: 2rem;
+}
+
+p.subtext {
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+	margin: auto;
+	background: rgba(249, 129, 107, 0.7);
+  border-radius: 50%;
+  flex-direction: column;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #FBA5A6;
+  margin: 15% auto;
+  padding: 20px;
+  width: 50%;
+}
+
+.modal-text {
+  font-family: 'Arvo', serif;
+  font-size: 3rem;
+}
+
+/* The Close Button */
+.close {
+  color: #3F211C;
+  float: right;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+input#number {
+  border: 4px solid #3F211C;
+  background-color: rgba(0, 0, 0, 0);
+  width: 20rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+button {
+  background-color: #3F211C;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
